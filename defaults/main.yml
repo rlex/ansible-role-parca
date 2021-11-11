@@ -1,0 +1,20 @@
+parca_server_version: 0.4.1
+parca_server_system_user: parca
+parca_server_system_group: parca
+parca_server_port: 7070
+parca_server_retention: 1h
+parca_server_config:
+  debug_info:
+    bucket:
+      config:
+        directory: "/tmp/parca"
+      type: FILESYSTEM
+    cache:
+      config:
+        directory: "/tmp/parca"
+      type: FILESYSTEM
+parca_server_scrape_configs:
+  - job_name: "parca"
+    scrape_interval: "30s"
+    static_configs:
+      - targets: ["127.0.0.1:7070"]

@@ -1,0 +1,5 @@
+- name: restart parca-server
+  systemd:
+    daemon_reload: true
+    name: parca
+    state: restarted

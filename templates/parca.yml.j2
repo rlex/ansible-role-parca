@@ -1,0 +1,4 @@
+{{ parca_server_config | to_nice_yaml }}
+
+scrape_configs:
+{{ parca_server_scrape_configs | to_nice_yaml(indent=2) }}
