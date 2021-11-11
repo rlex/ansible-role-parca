@@ -3,6 +3,7 @@ parca_server_system_user: parca
 parca_server_system_group: parca
 parca_server_port: 7070
 parca_server_retention: 1h
+parca_server: false
 parca_server_config:
   debug_info:
     bucket:
